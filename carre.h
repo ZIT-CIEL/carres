@@ -8,5 +8,8 @@ public:
     void Setsx(int sx1);
     void Setsy(int sy1);
     void Setcote(unsigned int cote1);
+    int Getsx();
+    int Getsy();
+    int GetCote();
     void Afficher();
 };
