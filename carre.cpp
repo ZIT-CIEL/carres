@@ -37,7 +37,29 @@ int CCarre::GetCote()
 
 void CCarre::Afficher()
 {
-	cout << "sx :" << this->sx << "sy :" << this->sy << "cote:" << this->cote<<endl;
+	cout << "sx:" << this->sx << "sy:" << this->sy << "cote:" << this->cote<<endl;
 
 
 }
+
+void CCarre::Deplacer(char direction, int saut)
+{
+    switch (direction) {
+    case 'n': // Nord
+        sy -= saut;
+        break;
+    case 's': // Sud
+        sy += saut;
+        break;
+    case 'o': // Ouest
+        sx -= saut;
+        break;
+    case 'e': // Est
+        sx += saut;
+        break;
+    default:
+        cout << "Direction invalide !" << endl;
+    }
+}
+
+
