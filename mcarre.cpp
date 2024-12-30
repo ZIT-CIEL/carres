@@ -9,6 +9,7 @@ int main() {
 	CCarre c2;
     CCarre tab[4] = { CCarre(), CCarre(), CCarre(), CCarre()};
     CCarre c4 = CCarre(3 ,4 ,10); 
+    CCarre *c5 = new CCarre(3, 4, 10);
 	c1.Afficher(); 
 	c1.Setsx(3);
 	c1.Setsy(15);
@@ -42,7 +43,9 @@ int main() {
     }
     cout << "carre numreo 5 :" << endl;
     c4.Afficher();
-
+    cout << "carre numreo 6 (allocation dynamique) :" << endl;
+    c5->Afficher();
+    delete c5; 
     return 0;
 
 
