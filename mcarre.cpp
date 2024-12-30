@@ -1,11 +1,13 @@
 #include<iostream>
 #include"carre.h"
+#include<stdio.h>
 using namespace std;
 
 int main() {
 
 	CCarre c1; 
 	CCarre c2;
+    CCarre tab[4] = { CCarre(), CCarre(), CCarre(), CCarre()};
 	c1.Afficher(); 
 	c1.Setsx(3);
 	c1.Setsy(15);
@@ -23,6 +25,20 @@ int main() {
     cout << "Déplacement avec dx = -3 et dy = 4." << endl;
     c1.Deplacer(-3, 4);
     c1.Afficher();
+    for (int i = 0; i < 4; i++) {
+        int x, y; 
+        unsigned int cote ; 
+        cout << "entrer le x du carre numero :" <<i+1 << endl; 
+        cin >> x; 
+        tab[i].Setsx(x);
+        cout << "entrer le y du carre numero :" << i + 1 << endl;
+        cin >> y; 
+        tab[i].Setsy(y);
+        cout << "entrer le cote du carre numero :" << i + 1 << endl;
+        cin >> cote; 
+        tab[i].Setcote(cote);
+        tab[i].Afficher();
+    }
 
     return 0;
 

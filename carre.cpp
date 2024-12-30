@@ -37,7 +37,7 @@ int CCarre::GetCote()
 
 void CCarre::Afficher()
 {
-	cout << "sx:" << this->sx << "sy:" << this->sy << "cote:" << this->cote<<endl;
+	cout << " sx:  " << this->sx << " sy:  " << this->sy << " cote:  " << this->cote<<endl;
 
 
 }
