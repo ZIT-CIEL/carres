@@ -5,6 +5,8 @@ private:
     int sy;   // Coordonnée y du sommet supérieur gauche
     int cote;
 public:
+     CCarre() ; 
+     CCarre(int  , int , unsigned int);
     void Setsx(int sx1);
     void Setsy(int sy1);
     void Setcote(unsigned int cote1);

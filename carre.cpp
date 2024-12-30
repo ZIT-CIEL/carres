@@ -2,6 +2,21 @@
 #include "carre.h"
 using namespace std;
 
+CCarre::CCarre()
+{
+    this->sx = 0; 
+    this->sy = 0;
+    this->cote = 0;
+}
+CCarre::CCarre(int SX , int SY , unsigned int COTE) 
+{
+
+    this->sx = SX;
+    this->sy = SY;
+    this->cote = COTE;
+
+}
+
 void CCarre::Setsx(int sx1)
 {
 	

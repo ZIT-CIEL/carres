@@ -8,6 +8,7 @@ int main() {
 	CCarre c1; 
 	CCarre c2;
     CCarre tab[4] = { CCarre(), CCarre(), CCarre(), CCarre()};
+    CCarre c4 = CCarre(3 ,4 ,10); 
 	c1.Afficher(); 
 	c1.Setsx(3);
 	c1.Setsy(15);
@@ -39,6 +40,8 @@ int main() {
         tab[i].Setcote(cote);
         tab[i].Afficher();
     }
+    cout << "carre numreo 5 :" << endl;
+    c4.Afficher();
 
     return 0;
 
